@@ -3,6 +3,8 @@ var coverTitle = document.querySelector("h2.cover-title");
 var tagline = document.querySelector("h3.tagline");
 var randomCoverBtn = document.querySelector(".random-cover-button");
 var makeOwnCoverBtn = document.querySelector(".make-new-button");
+var saveCoverBtn = document.querySelector(".save-cover-button");
+var homeBtn = document.querySelector(".home-button");
 var formView = document.querySelector(".form-view");
 var homeView = document.querySelector(".home-view");
 var savedCovers = [
@@ -11,8 +13,10 @@ var savedCovers = [
 var currentCover;
 
 
-randomCoverBtn.addEventListener('click', newRandomCover);
-makeOwnCoverBtn.addEventListener('click', showFormView);
+randomCoverBtn.addEventListener("click", newRandomCover);
+makeOwnCoverBtn.addEventListener("click", showFormView);
+saveCoverBtn.addEventListener("click", saveCover);
+homeBtn.addEventListener("click", takeMeHome);
 // document.addEventListener('load', makeRandomCover);
 
 coverTitle.innerText = titles[getRandomIndex(titles)];
@@ -41,4 +45,15 @@ function displayCover() {
 function showFormView() {
   formView.classList.remove("hidden");
   homeView.classList.add("hidden");
+  randomCoverBtn.classList.add("hidden");
+  saveCoverBtn.classList.add("hidden");
+  homeBtn.classList.remove("hidden");
+}
+
+function saveCover() {
+
+}
+
+function takeMeHome() {
+
 }
