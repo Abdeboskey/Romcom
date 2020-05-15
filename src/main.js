@@ -13,6 +13,7 @@ var currentCover;
 // Add your event listeners here 👇
 
 randomCoverBtn.addEventListener('click', makeRandomCover);
+// window.addEventListener('onload', makeRandomCover);
 
 // Create your event handlers and other functions here 👇
 
@@ -31,6 +32,10 @@ function makeRandomCover() {
     descriptors[getRandomIndex(descriptors)],
     descriptors[getRandomIndex(descriptors)]
   );
+  displayCover();
+}
+
+function displayCover() {
   coverImage.src = currentCover.cover;
   coverTitle.innerText = currentCover.title;
   tagline.innerText = `A tale of ${currentCover.tagline1} & ${currentCover.tagline2}`;
