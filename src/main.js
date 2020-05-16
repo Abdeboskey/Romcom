@@ -4,8 +4,10 @@ var tagline = document.querySelector("h3.tagline");
 var randomCoverBtn = document.querySelector(".random-cover-button");
 var makeOwnCoverBtn = document.querySelector(".make-new-button");
 var saveCoverBtn = document.querySelector(".save-cover-button");
+var viewSavedBtn = document.querySelector(".view-saved-button");
 var homeBtn = document.querySelector(".home-button");
 var formView = document.querySelector(".form-view");
+var savedView = document.querySelector(".saved-view");
 var homeView = document.querySelector(".home-view");
 var savedCovers = [
   new Cover("http://3.bp.blogspot.com/-iE4p9grvfpQ/VSfZT0vH2UI/AAAAAAAANq8/wwQZssi-V5g/s1600/Do%2BNot%2BForsake%2BMe%2B-%2BImage.jpg", "Sunsets and Sorrows", "sunsets", "sorrows")
@@ -16,9 +18,10 @@ var currentCover;
 randomCoverBtn.addEventListener("click", newRandomCover);
 makeOwnCoverBtn.addEventListener("click", showFormView);
 saveCoverBtn.addEventListener("click", saveCover);
+viewSavedBtn.addEventListener("click", viewSavedCovers);
 homeBtn.addEventListener("click", takeMeHome);
-// document.addEventListener('load', makeRandomCover);
 
+// document.addEventListener('load', makeRandomCover);
 coverTitle.innerText = titles[getRandomIndex(titles)];
 coverImage.src = covers[getRandomIndex(covers)];
 tagline.innerText = `A tale of ${descriptors[getRandomIndex(descriptors)]} & ${descriptors[getRandomIndex(descriptors)]}`;
@@ -45,6 +48,7 @@ function displayCover() {
 function showFormView() {
   formView.classList.remove("hidden");
   homeView.classList.add("hidden");
+  savedView.classList.add("hidden");
   randomCoverBtn.classList.add("hidden");
   saveCoverBtn.classList.add("hidden");
   homeBtn.classList.remove("hidden");
@@ -52,6 +56,15 @@ function showFormView() {
 
 function saveCover() {
 
+}
+
+function viewSavedCovers() {
+  savedView.classList.remove("hidden");
+  homeView.classList.add("hidden");
+  randomCoverBtn.classList.add("hidden");
+  saveCoverBtn.classList.add("hidden");
+  homeBtn.classList.remove("hidden");
+  formView.classList.add("hidden");
 }
 
 function takeMeHome() {
