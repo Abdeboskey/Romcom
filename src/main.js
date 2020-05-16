@@ -46,12 +46,12 @@ function displayCover() {
 }
 
 function showFormView() {
-  formView.classList.remove("hidden");
   homeView.classList.add("hidden");
   savedView.classList.add("hidden");
+  formView.classList.remove("hidden");
+  homeBtn.classList.remove("hidden");
   randomCoverBtn.classList.add("hidden");
   saveCoverBtn.classList.add("hidden");
-  homeBtn.classList.remove("hidden");
 }
 
 function saveCover() {
@@ -59,14 +59,18 @@ function saveCover() {
 }
 
 function viewSavedCovers() {
-  savedView.classList.remove("hidden");
   homeView.classList.add("hidden");
+  savedView.classList.remove("hidden");
+  formView.classList.add("hidden");
+  homeBtn.classList.remove("hidden");
   randomCoverBtn.classList.add("hidden");
   saveCoverBtn.classList.add("hidden");
-  homeBtn.classList.remove("hidden");
-  formView.classList.add("hidden");
 }
 
 function takeMeHome() {
-
+  homeView.classList.remove("hidden");
+  formView.classList.add("hidden");
+  homeBtn.classList.add("hidden");
+  randomCoverBtn.classList.remove("hidden");
+  saveCoverBtn.classList.remove("hidden");
 }
