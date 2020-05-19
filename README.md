@@ -8,6 +8,18 @@ Romcom is a website that can generate random romantic novel covers from a pre-ex
 
 ### Functionality and application:
 
-* From the homepage, users can click the Show New Random Cover button, and the website will pull a random cover image, title, and two random descriptors from a pre-existing database to be displayed on screen as a romantic novel cover.
+* From the homepage, users can click the "Show New Random Cover" button, and the website will pull a random cover image, title, and two random descriptors from a pre-existing database to be displayed on screen as a romantic novel cover.
 
-![Home View with new random cover] (./screenshots/random_cover_view.png)
+![Home View with new random cover](screenshots/random_cover_view.png)
+
+* If the user likes this particular cover, they can click "Save Cover" to add it to a collection of saved covers. If the cover has already been saved, it will not be saved again. They can look at their collection by clicking "View Saved Covers" which will take them to a page displaying all of their saved covers.
+
+![Saved Covers View with collection of saved covers](screenshots/saved_cover_view.png)
+
+* If a user would like to make their own cover, they can do so by navigating to the "Make Your Own Cover" section, input a link to a cover image, a title, and two descriptors into the form, and click "Make My Cover".
+
+![Make Your Own Cover form view](screenshots/make_new_cover_form.png)
+
+*  When the "Make My Cover" button is clicked, the cover-image, title, and descriptors will be added to the database for use with future random covers, and they will be taken to the home screen where their new cover is displayed. 
+
+![User-Made cover displayed on home view](screenshots/display_new_cover.png)
