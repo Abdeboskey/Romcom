@@ -53,14 +53,15 @@ function displayCover() {
 function displaySavedCovers() {
   savedCoversSection.innerHTML = "";
   for (var i = 0; i < savedCovers.length; i++) {
-    var miniCoverHTML =
-    `<section class="mini-cover" id=${savedCovers[i].id}>
-    <img class="cover-image" src="${savedCovers[i].cover}">
-    <h2 class="cover-title">${savedCovers[i].title}</h2>
-    <h3 class="tagline">A tale of <span class="tagline-1">${savedCovers[i].tagline1}</span> & <span class="tagline-2">${savedCovers[i].tagline2}</span></h3>
-    <img class="price-tag" src="./assets/price.png">
-    <img class="overlay" src="./assets/overlay.png">
-    </section>`;
+    var miniCoverHTML = `
+    <section class="mini-cover" id=${savedCovers[i].id}>
+      <img class="cover-image" src="${savedCovers[i].cover}">
+      <h2 class="cover-title">${savedCovers[i].title}</h2>
+      <h3 class="tagline">A tale of <span class="tagline-1">${savedCovers[i].tagline1}</span> & <span class="tagline-2">${savedCovers[i].tagline2}</span></h3>
+      <img class="price-tag" src="./assets/price.png">
+      <img class="overlay" src="./assets/overlay.png">
+    </section>
+    `;
     savedCoversSection.innerHTML += miniCoverHTML;
   }
 }
@@ -101,7 +102,7 @@ function addToDatabase() {
 
 function makeMyBook() {
   event.preventDefault();
-  currentCover = new Cover(coverFormInput.value, titleFormInput.value, desc1Input.value, desc2Input.value)
+  currentCover = new Cover(coverFormInput.value, titleFormInput.value, desc1Input.value, desc2Input.value);
   addToDatabase();
   takeMeHome();
   displayCover();
@@ -112,9 +113,9 @@ function saveCover() {
 }
 
 function deleteCover(event) {
-  var deleteId = event.target.parentElement.id;
+  var targetId = event.target.parentElement.id;
   for (var i = 0; i < savedCovers.length; i++) {
-    if (savedCovers[i].id == deleteId) {
+    if (savedCovers[i].id == targetId) {
       savedCovers.splice(i, 1);
     }
   }
