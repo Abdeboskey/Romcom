@@ -9,11 +9,11 @@ This project was the first paired-programming project for Turing School of Softw
 
 * From the homepage, users can click the "Show New Random Cover" button, and the website will pull a random cover image, title, and two random descriptors from a pre-existing database to be displayed on screen as a romantic novel cover.
 
-![Creating a new Random Cover](screenshots/newRandomCoverDemo.gif)
+![Creating a new Random Cover](screenshots/new_random_cover.gif)
 
 * If the user likes this particular cover, they can click "Save Cover" to add it to a collection of saved covers. If the cover has already been saved, it will not be saved again. They can look at their collection by clicking "View Saved Covers" which will take them to a page displaying all of their saved covers.
 
-![Saved Covers View with collection of saved covers](screenshots/saveCoverDemo.gif)
+![Saved Covers View with collection of saved covers](screenshots/save_and_view_saved.gif)
 
 * If a user would like to make their own cover, they can do so by navigating to the "Make Your Own Cover" section, input a link to a cover image, a title, and two descriptors into the form, and click "Make My Cover".
 
@@ -21,11 +21,11 @@ This project was the first paired-programming project for Turing School of Softw
 
 * The user can then click "Save Cover" and the new cover will be saved in the "View Saved Covers" section, and can be viewed by switching to that section.
 
-![Make new cover and view new cover demonstration](screenshots/romcomReadmeInAction.gif)
+![Make new cover and view new cover demonstration](screenshots/make_new_cover.gif)
 
 * A user can remove a cover from the collection by double clicking on the cover they would like to remove.
 
-![Double click covers to delete them](screenshots/doubleClickToRemove.gif)
+![Double click covers to delete them](screenshots/delete_covers.gif)
 
 ### Contributors
 
