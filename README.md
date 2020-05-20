@@ -15,9 +15,9 @@ This project was the first paired-programming project for Turing School of Softw
 
 ![Saved Covers View with collection of saved covers](screenshots/save_and_view_saved.gif)
 
-* If a user would like to make their own cover, they can do so by navigating to the "Make Your Own Cover" section, input a link to a cover image, a title, and two descriptors into the form, and click "Make My Cover".
+* If a user would like to make their own cover, they can do so by navigating to the "Make Your Own Cover" section, input a link to a cover image, a title, and two descriptors into the form, and click "Make My Book".
 
-*  When the "Make My Cover" button is clicked, the cover-image, title, and descriptors will be added to the database for use with future random covers, and they will be taken to the home screen where their new cover is displayed. 
+*  When the "Make My Book" button is clicked, the cover-image, title, and descriptors will be added to the database for use with future random covers, and they will be taken to the home screen where their new cover is displayed. 
 
 * The user can then click "Save Cover" and the new cover will be saved in the "View Saved Covers" section, and can be viewed by switching to that section.
 
