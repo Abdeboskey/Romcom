@@ -29,4 +29,4 @@ This project was the first paired-programming project for Turing School of Softw
 
 ### Contributors
 
-This project was completed by Kyle Jones (@KJJones13) and Aaron Burris-DeBoskey (@Abdeboskey) on 5/19/2020.
+This project was completed on 5/19/2020 by Kyle Jones ([@KJJones13](https://github.com/KJJones13)) and Aaron Burris-DeBoskey ([@Abdeboskey](https://github.com/Abdeboskey)) and can be seen in GitHub Pages deployment [Here](https://kjjones13.github.io/romcom/).
