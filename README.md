@@ -9,7 +9,7 @@ This project was the first paired-programming project for Turing School of Softw
 
 * From the homepage, users can click the "Show New Random Cover" button, and the website will pull a random cover image, title, and two random descriptors from a pre-existing database to be displayed on screen as a romantic novel cover.
 
-![Creating a new Random Cover](newRandomCoverDemo.gif)
+![Creating a new Random Cover](screenshots/newRandomCoverDemo.gif)
 
 * If the user likes this particular cover, they can click "Save Cover" to add it to a collection of saved covers. If the cover has already been saved, it will not be saved again. They can look at their collection by clicking "View Saved Covers" which will take them to a page displaying all of their saved covers.
 
@@ -26,3 +26,7 @@ This project was the first paired-programming project for Turing School of Softw
 * A user can remove a cover from the collection by double clicking on the cover they would like to remove.
 
 ![Double click covers to delete them](screenshots/doubleClickToRemove.gif)
+
+### Contributors
+
+This project was completed by Kyle Jones (@KJJones13) and Aaron Burris-DeBoskey (@Abdeboskey) on 5/19/2020.
